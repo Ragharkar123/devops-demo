@@ -22,3 +22,6 @@ jobs:
 
       - name: Check Syntax
         run: node -c app.js
+
+      - name: Build Docker Image
+        run: docker build -t devops-app .
