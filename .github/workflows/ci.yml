@@ -23,5 +23,8 @@ jobs:
       - name: Check Syntax
         run: node -c app.js
 
+      - name: Security Scan
+        run: npm audit
+
       - name: Build Docker Image
         run: docker build -t devops-app .
